@@ -259,14 +259,47 @@
     .nav-links.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:var(--navy);padding:18px 24px;gap:1.1rem;border-bottom:1px solid rgba(255,255,255,.1)}
   }
   @media(max-width:680px){
+    section{padding:64px 0}
+    .wrap{padding:0 20px}
     .nav-cta .btn-primary{display:none}
     .brand small{display:none}
     .brand b{font-size:1.04rem}
+    .hero .wrap{padding:44px 20px 80px}
+    .hero p.lead{font-size:1.08rem;max-width:42ch}
+    .hero-trust{margin-top:1.8rem;gap:.6rem 1.3rem}
+    .section-head{margin-bottom:36px}
     .steps{grid-template-columns:1fr}
     .cards{grid-template-columns:1fr}
-    section{padding:68px 0}
     .two{grid-template-columns:1fr}
-    .service-area{flex-direction:column;align-items:flex-start}
+    .service-area{flex-direction:column;align-items:flex-start;gap:14px;padding:22px}
+    .step{padding:26px}
+    .hero-card{padding:24px}
+    .quote{padding:26px}
+    form{padding:26px}
+    .foot{grid-template-columns:1fr;gap:26px}
+    .foot p{max-width:46ch}
+    .foot-bottom{margin-top:30px}
+    footer{padding:46px 0 28px}
+  }
+  @media(max-width:480px){
+    section{padding:50px 0}
+    .wrap{padding:0 16px}
+    .hero .wrap{padding:34px 16px 76px}
+    .hero h1{font-size:clamp(2rem,8.4vw,2.5rem)}
+    .hero p.lead{font-size:1.04rem;margin-top:1rem}
+    .hero-cta{gap:.7rem}
+    .hero-cta .btn{width:100%;justify-content:center}
+    .hero-trust{margin-top:1.5rem}
+    .section-head{margin-bottom:26px}
+    .section-head p{font-size:1.02rem}
+    .feat-item{gap:14px}
+    .feat-item .num{flex:0 0 46px;width:46px;height:46px}
+    .stats .grid{gap:26px 16px}
+    .stat strong{font-size:clamp(2rem,9vw,2.6rem)}
+    form{padding:20px}
+    .cmethod a,.cmethod span{font-size:.98rem;word-break:break-word}
+    .price-note{margin-top:30px}
+    .service-area{margin-top:30px}
   }
 </style>
 </head>
