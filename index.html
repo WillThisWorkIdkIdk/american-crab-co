@@ -220,6 +220,8 @@
   .cmethod{display:flex;align-items:center;gap:14px}
   .cmethod .ic{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#f3a385;flex:0 0 46px}
   .cmethod a,.cmethod span{color:#fff;font-weight:600;font-size:1.05rem}
+  a[href^="tel:"]{white-space:nowrap}
+  .cmethod a[href^="mailto:"]{overflow-wrap:anywhere}
   .cmethod small{display:block;color:#8fb0c4;font-weight:500;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase}
   form{background:#fff;border-radius:22px;padding:34px;box-shadow:var(--shadow);color:var(--ink)}
   form h3{font-size:1.4rem;color:var(--navy)}
@@ -297,7 +299,7 @@
     .stats .grid{gap:26px 16px}
     .stat strong{font-size:clamp(2rem,9vw,2.6rem)}
     form{padding:20px}
-    .cmethod a,.cmethod span{font-size:.98rem;word-break:break-word}
+    .cmethod a,.cmethod span{font-size:.98rem}
     .price-note{margin-top:30px}
     .service-area{margin-top:30px}
   }
